@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Vehicle.h"
-//#include "Car.h"
+#include "Car.h"
 //#include "Truck.h"
 using namespace std;
 
@@ -19,4 +19,16 @@ int main() {
     Vehicle v(manufacturer, year);
     cout << endl;
     v.displayInfo();
+
+        cout << "\nCar:Enter manufacturer: ";
+    getline(cin, manufacturer);
+    cout << "Enter year built: ";
+    cin >> year;
+    cout << "Enter number of doors: ";
+    cin >> doors;
+    cin.ignore();
+
+    Car c(manufacturer, year, doors);
+    cout << endl;
+    c.displayInfo();
 }
