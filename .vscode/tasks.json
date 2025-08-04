@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build Vehicle Proj",
+            "label": "Build Veh",
             "type": "shell",
             "command": "C:/msys64/mingw64/bin/g++.exe",
             "args": [
